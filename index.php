@@ -49,5 +49,29 @@
       <div class="right-image">
         <img src="./images/divide.png" alt="Long Division with labels" />
       </div>
-      <div class="page-content">
-        
+      <form action="answer.php" method="GET">
+        <p>Enter dividend:</p>
+        <div class="mdl-textfield mdl-js-textfield">
+          <input class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" name="dividend" id="dividend" />
+          <label class="mdl-textfield__label" for="dividend">Number...</label>
+          <span class="mdl-textfield__error">Input is not a number!</span>
+        </div>
+        <br />
+        <p>Enter divisor:</p>
+        <div class="mdl-textfield mdl-js-textfield">
+          <input class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" name="divisor" id="divisor" />
+          <label class="mdl-textfield__label" for="divisor">Number...</label>
+          <span class="mdl-textfield__error">Input is not a number!</span>
+        </div>
+        <br />
+        <!-- Accent-colored raised button with ripple -->
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+          type="submit">
+          Calculate
+        </button>
+      </form>
+    </main>
+  </div>
+</body>
+
+</html>
